@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <title> Maia Imports </title>
+</head>
+<body>
+  <!--  HEADER -->
+  <header class="w-full h-[320px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+      <img 
+        src="./assets/logo.png" 
+        alt="Logo Maia imports" 
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+      />
+      <h1 class = "text-4xl mt-4 mb-2 font-bold text-white">
+          Maia imports
+      </h1>
+      
+      <span class="text-white font-medium">Bodocó / Juazeiro do Norte</span>
+
+      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+          <span class="text-white font-medium">Seg á domingo 8:00 às 20:00</span>
+      </div>
+      
+    </div>
+  </header>
+  <!-- fim do HEADER -->
+   
+  <h2 class="text-2xl md:txt-7xl font-bold text-center mt-9 mb-6">
+    Nossos Smarthphones:
+  </h2>
+
+  <!-- inicio vitrine -->
+  <div id="vitrine">
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb=16">
+  
+      <!-- produto item -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./assets/note14.png" 
+          alt="Note 14" 
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+          
+        <div>
+          <p class="font-bold ">Redmi Note 14 4G</p>
+          <p class="text-sm">Xiaomi Redmi Note 14 4g 256/12GB, Helio G99-Ultra, tela 6.67 AMOLED-120hz, Câmera 108mp, carregamento 33w (5500mah), IP54.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 1300.00</p>
+            <button 
+              class ="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Redmi Note 14 4G"
+              data-price="1300.00"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+        
+      </div>
+      <!-- fim produto item -->
+    
+      <!-- produto item -->
+      <div class="flex gap-2 w-full">
+        <img src="./assets/pocox7pro.png" 
+          alt="Poco X7 Pro" 
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+          
+        <div>
+          <p class="font-bold ">Poco X7 Pro 5G</p>
+          <p class="text-sm">Poco X7 Pro versão Global 256/12GB, Dimensity 8400-Ultra, tela 1.5K 6,67 AMOLED-120hz, Câmera 50mp, carregamento 90W (6000mAh), NFC, IP68.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$2300.00</p>
+            <button 
+              class ="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Poco X7 Pro 5G"
+              data-price="2300.00"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+        
+      </div>
+      <!-- fim produto item -->
+
+      <!-- produto item -->
+      <div class="flex gap-2 w-full">
+        <img
+          src="./assets/pocox7.png" 
+          alt="poco x7" 
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+          
+        <div>
+            <p class="font-bold ">POCO X7 5G</p>
+            <p class="text-sm">Poco X7 versão Global 256/8GB, Dimensity 7300-Ultra, tela 1.5K curva 6,67 AMOLED-120hz, Câmera 50mp, carregamento 45W(5110mah), NFC, IP68.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$1800.00</p>
+              <button 
+                class ="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="POCO X7 5G"
+                data-price="1800.00"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+          </div>
+
+        </div>
+        
+      </div>
+      <!-- fim produto item -->
+
+      <!-- produto item -->
+      <div class="flex gap-2 w-full">
+        <img 
+          src="./assets/pocox6pro.png" 
+          alt="poco x6 pro" 
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+          
+        <div>
+          <p class="font-bold ">Xiaomi Poco X6 PRO 5G</p>
+          <p class="text-sm">Poco X6 PRO 5G Versão Global 512/12GB, Dimensity 8300-Ultra 6,67, tela 1.5K AMOLED-120hz, Câmera 64mp,  carregamento 67W (5000mAh), NFC, IP54.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$2250.00</p>
+            <button 
+              class ="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="poco x6 pro 5g"
+              data-price="2250.00"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+
+        </div>
+        
+      </div>
+      <!-- fim produto item -->
+
+    </main>
+    
+    <div class="mx-auto max-w-7xl px-2 mt-9 mb-6">
+      <h2 class="font-bold text-3xl flex items-center justify-center text-center">
+        Nossos Acessorios: 
+      </h2>
+    </div>
+    
+    <!-- grid acessorios -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 pb-50 mt-10" id="acessorios" style="padding-bottom: 80px;">
+       
+      <!-- produto item -->
+        <div class="flex gap-2 w-full">
+          <img src="./assets/baseus.webp" 
+            alt="Cabo Baseus 100W" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          
+          <div class="w-full">
+            <p class="font-bold ">Cabo Baseus 100W</p>
+            <p class="text-sm">cabo USB-Type-C 100W, fio trançado de nylon, 1m e taxa de transmissão de 480Mbps.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$30.00</p>
+              <button 
+                class ="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Cabo Baseus 100W"
+                data-price="30.00"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+    
+          </div>
+
+        </div>
+        <!-- fim produto item -->
+
+        <!-- produto item 2-->
+        <div class="flex gap-2 w-full">
+          <img src="./assets/gm2pro.webp" 
+            alt="gm2pro" 
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+          
+          <div class="w-full">
+            <p class="font-bold "> Lenovo Gm2 pro</p>
+            <p class="text-sm">lenovo gm2 pro bt 5.3, fone gamer com baixa latência, 5 horas de Bateria.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$80.00</p>
+              <button 
+                class ="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="leonovo gm2 pro"
+                data-price="80.00"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          
+          </div>
+        
+        </div>
+        <!-- fim produto item 2-->  
+
+    </div>
+    <!-- fim grid acessorios -->
+
+  </div>
+  <!--fim vitrine-->
+   
+  
+  <!--modal cart-->
+  <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center
+   hidden" id="cart-modal">
+
+    <div class="bg-white p-5 rounder-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-2xl font-bold text-center mb-2"> Meu carrrinho</h2>
+      <div id = "cart-items" class="flex justify-between mb-2 flex-col"></div>
+        
+      <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+      
+      <p class="font-bold mt-4">Endereço de entrega: </p>
+      <input 
+        type="text"
+        placeholder="Digite seu endereço completo"
+        id="address"
+        class="w-full border-2 p-1 rounded my-1"
+      />
+      <p class="text-red-500 hidden" id="address-warn">Digite sue endereço completo para entrega</p>
+        
+      <div class="flex items-center justify-between mt-5 w-full">
+          <button id="closed-modal-btn">Fechar</button>
+            <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+      </div>
+
+    </div>
+
+  </div>
+  <!--Fim modal cart-->   
+
+  <!-- button cart footer -->
+  <footer class="w-full bg-red-500 py-3 fixed bottom-0  z-40 flex items-center justify-center">
+    <button class="flex items-center gap-2 text-white font-bold"
+      id="cart-btn"
+    >
+    (<span id="cart-count">0</span>)
+      Veja meu carrrinho
+      <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+  </footer>
+  <!-- fim button cart footer -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./script.js"></script>
+
+</body>
+</html>
