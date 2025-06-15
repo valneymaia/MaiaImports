@@ -8,7 +8,7 @@ const closeBtn = document.getElementById("closed-modal-btn");
 const cartCount = document.getElementById("cart-count");
 const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
-
+const dateSpan = document.getElementById("date-span");
 let cart = [];
 //abrir modal carrinho
 cartBtn.addEventListener("click", function() {
@@ -162,9 +162,8 @@ function checkEcommerceOpen() {
     const hora = data.getHours();
     return hora >= 8 && hora < 20; 
     //true = aberto
-    
 }
-const spanItem = document.createElement("date-span");
+const spanItem = document.getElementById("date-span");
 const isOpen = checkEcommerceOpen();
 
 if (isOpen) {
